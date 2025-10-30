@@ -1,9 +1,8 @@
 @import "tailwindcss";
-
 /* BlackMango Font Family */
 @font-face {
   font-family: 'BlackMango';
-  src: url('/font/BlackMango-Thin.otf') format('opentype');
+  src: url('/font/BlackMango-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -11,7 +10,7 @@
 
 @font-face {
   font-family: 'BlackMango';
-  src: url('/font/BlackMango-ExtraLight.otf') format('opentype');
+  src: url('/font/BlackMango-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -19,7 +18,7 @@
 
 @font-face {
   font-family: 'BlackMango';
-  src: url('/font/BlackMango-Light.otf') format('opentype');
+  src: url('/font/BlackMango-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -27,7 +26,7 @@
 
 @font-face {
   font-family: 'BlackMango';
-  src: url('/font/BlackMango-Regular.otf') format('opentype');
+  src: url('/font/BlackMango-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -35,7 +34,7 @@
 
 @font-face {
   font-family: 'BlackMango';
-  src: url('/font/BlackMango-Medium.otf') format('opentype');
+  src: url('/font/BlackMango-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -43,7 +42,7 @@
 
 @font-face {
   font-family: 'BlackMango';
-  src: url('/font/BlackMango-SemiBold.otf') format('opentype');
+  src: url('/font/BlackMango-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -51,7 +50,7 @@
 
 @font-face {
   font-family: 'BlackMango';
-  src: url('/font/BlackMango-Bold.otf') format('opentype');
+  src: url('/font/BlackMango-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -59,7 +58,7 @@
 
 @font-face {
   font-family: 'BlackMango';
-  src: url('/font/BlackMango-ExtraBold.otf') format('opentype');
+  src: url('/font/BlackMango-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -67,7 +66,7 @@
 
 @font-face {
   font-family: 'BlackMango';
-  src: url('/font/BlackMango-Black.otf') format('opentype');
+  src: url('/font/BlackMango-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -218,15 +217,23 @@
   font-display: swap;
 }
 
-:root {
-  font-family: 'WorkSans', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  --color-white-100: #F3F3F3;
+  --color-white-80: #F3F3F380;
+  --color-white-60: #F3F3F360;
+  --color-black-100: #1C191E;
+  --color-black-80: #1C191E80;
+  --color-black-60: #1C191E60;
+  --color-red-100: #3C0008;
+  --color-red-80: #3C000880;
+  --color-red-60: #3C000860;
+  --color-green-100: #2F3D30;
+  --color-green-80: #2F3D3080;
+  --color-green-60: #2F3D3060;
+  
+  --font-blackmango: BlackMango, sans-serif;
+  --font-worksans: WorkSans, sans-serif;
 }
 
 body {
